@@ -1,0 +1,1 @@
+{"name":"SDB.UI","rootNamespace":"SDB.UI","references":["SDB.Core","UnityEngine.UI"],"includePlatforms":[],"defineConstraints":[],"overrideReferences":false,"precompiledReferences":[],"autoReferenced":true,"versionDefines":[],"noEngineReferences":false}

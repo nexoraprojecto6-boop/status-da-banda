@@ -1,0 +1,32 @@
+{
+  "countries": [
+    {
+      "code": "AO", "name": "Angola", "currency": "Kz",
+      "provinces": [
+        { "id": "AO-LUA", "name": "Luanda", "cities": [
+          { "id": "AO-LUA-LUANDA", "name": "Luanda", "neighborhoods": [
+            { "id": "AO-LUA-LUANDA-MAIANGA", "name": "Maianga", "birthWeight": 3, "capacity": 500, "active": true, "spawnPoints": [ {"x":0,"y":1,"z":0}, {"x":6,"y":1,"z":4} ] },
+            { "id": "AO-LUA-LUANDA-INGOMBOTA", "name": "Ingombota", "birthWeight": 2, "capacity": 400, "active": true, "spawnPoints": [ {"x":-8,"y":1,"z":3} ] },
+            { "id": "AO-LUA-LUANDA-RANGEL", "name": "Rangel", "birthWeight": 3, "capacity": 500, "active": true, "spawnPoints": [ {"x":10,"y":1,"z":-6} ] },
+            { "id": "AO-LUA-LUANDA-CAZENGA", "name": "Cazenga", "birthWeight": 4, "capacity": 600, "active": true, "spawnPoints": [ {"x":-12,"y":1,"z":-8} ] },
+            { "id": "AO-LUA-LUANDA-TALATONA", "name": "Talatona", "birthWeight": 2, "capacity": 400, "active": true, "spawnPoints": [ {"x":4,"y":1,"z":12} ] },
+            { "id": "AO-LUA-LUANDA-VIANA", "name": "Viana", "birthWeight": 4, "capacity": 600, "active": true, "spawnPoints": [ {"x":-4,"y":1,"z":-12} ] }
+          ] }
+        ] }
+      ]
+    },
+    {
+      "code": "MZ", "name": "Moçambique", "currency": "MT",
+      "provinces": [
+        { "id": "MZ-MPM", "name": "Maputo (cidade)", "cities": [
+          { "id": "MZ-MPM-MAPUTO", "name": "Maputo", "neighborhoods": [
+            { "id": "MZ-MPM-MAPUTO-POLANA", "name": "Polana", "birthWeight": 2, "capacity": 400, "active": true, "spawnPoints": [ {"x":0,"y":1,"z":0} ] },
+            { "id": "MZ-MPM-MAPUTO-ALTOMAE", "name": "Alto-Maé", "birthWeight": 3, "capacity": 500, "active": true, "spawnPoints": [ {"x":7,"y":1,"z":5} ] },
+            { "id": "MZ-MPM-MAPUTO-MALHANGALENE", "name": "Malhangalene", "birthWeight": 3, "capacity": 500, "active": true, "spawnPoints": [ {"x":-7,"y":1,"z":5} ] },
+            { "id": "MZ-MPM-MAPUTO-COSTADOSOL", "name": "Costa do Sol", "birthWeight": 2, "capacity": 400, "active": true, "spawnPoints": [ {"x":0,"y":1,"z":-10} ] }
+          ] }
+        ] }
+      ]
+    }
+  ]
+}

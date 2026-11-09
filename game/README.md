@@ -1,6 +1,15 @@
 # game/ — Cliente Unity
-**Estado:** estrutura preparada; **projeto Unity ainda não inicializado** (Fase 2).
-Na Fase 2 será criado o projeto com Unity 6 LTS (versão confirmada nessa altura) e URP, com `Packages/manifest.json` e `ProjectSettings/` reais, gerados pelo Unity Editor. Os ficheiros `.meta` serão gerados pelo Unity e commitados.
+**Estado:** código base pronto (Core, World, Services offline, Player, UI, Demo, Editor, testes). O projeto Unity em si (`ProjectSettings/`, `Packages/manifest.json`) é gerado pelo Unity Hub — ver `docs/SETUP-UNITY.md`.
 
-Organização planeada de `Assets/Scripts/`: `Core/`, `Net/`, `Player/`, `World/`, `UI/`, `Services/`, usando Assembly Definitions por módulo.
-Regra: o cliente **nunca** é autoridade sobre economia, inventário ou propriedades.
+## Assemblies (`Assets/Scripts`)
+| Assembly | Conteúdo |
+|---|---|
+| `SDB.Core` | ServiceLocator, Result, IMoveInput/TouchInput, CryptoRng |
+| `SDB.World` | Modelos de regiões, BirthSelector |
+| `SDB.Services` | IAuthService/IBirthService, implementações offline, GameBootstrap (composition root) |
+| `SDB.Player` | PlayerController (terceira pessoa), ThirdPersonCamera |
+| `SDB.UI` | VirtualJoystick, LookPad |
+| `SDB.Demo` | BirthDemoHud (protótipo) |
+| `SDB.Editor` | Menu **STATUS DA BANDA > Criar cena protótipo** |
+
+Regra: o cliente nunca é autoridade sobre economia, inventário ou propriedades. Os serviços *Offline* só existem para desenvolvimento; serão trocados por PlayFab/Functions em `GameBootstrap`.

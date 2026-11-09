@@ -1,0 +1,1 @@
+{"name":"SDB.Services","rootNamespace":"SDB.Services","references":["SDB.Core","SDB.World"],"includePlatforms":[],"defineConstraints":[],"overrideReferences":false,"precompiledReferences":[],"autoReferenced":true,"versionDefines":[],"noEngineReferences":false}

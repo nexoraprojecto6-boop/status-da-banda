@@ -1,15 +1,17 @@
 # DEVELOPMENT-STATE
-**Fase atual:** 1 — Root project, documentação e arquitetura base (**concluída, a aguardar aprovação**).
+**Fase atual:** aceleração — fundações reais (Fases 2, 5-parcial, 6-parcial e 10-parcial em modo offline) sobre a Fase 1 aprovada.
 ## Concluído
-Estrutura do repositório, configs (.gitignore, .gitattributes, .editorconfig, .env.example), documentação técnica e de design completa, diagramas Mermaid, roadmap, ADRs 0001–0005, documentos de continuidade.
-## Em desenvolvimento
-Nada (aguarda aprovação da Fase 1).
+- Fase 1: raiz, docs, ADRs, continuidade.
+- Cliente Unity (código): Core, World, Services offline (login local + nascimento aleatório), Player (movimento + câmera 3ª pessoa), UI de toque, HUD de protótipo, construtor de cena, testes EditMode.
+- Dados: `infrastructure/database/regions.json` (Angola/Luanda, Moçambique/Maputo — pesos e spawns **placeholder**), cópia em `game/Assets/Resources/Data/`.
+- Backend: `backend/src/StatusDaBanda.Rules` (BirthSelector, BirthService idempotente, InMemoryLedger idempotente) + testes xUnit. CI GitHub Actions (`dotnet test`).
+## Não validado (escrito sem compilar/executar, por escolha do dono)
+Todo o código Unity e .NET. Primeiro passo: abrir no Unity/rodar `dotnet test` e reportar erros.
 ## Falta
-Tudo o resto: projeto Unity (Fase 2) em diante.
-## Problemas conhecidos / limitações
-- Não existe projeto Unity; `game/Packages` e `game/ProjectSettings` estão vazios (`.gitkeep`) — serão gerados pelo Unity Editor.
-- Stack **proposta**, ainda não validada (custos, limites, latência em África).
-- Licença do código é placeholder proprietário; rever.
-- Diagramas Mermaid não foram renderizados em ferramenta (sintaxe simples; GitHub renderiza).
+Projeto Unity real (Hub), cena com bairro de Luanda, avatar, PlayFab/Functions (substituir serviços offline), multiplayer, chat, restante roadmap.
+## Problemas conhecidos
+- `.meta` serão gerados pelo Unity ao importar.
+- Pacotes/versões (URP, Addressables) a fixar quando o projeto for criado.
+- `BirthService.SecureRng` é simples (RandomNumberGenerator.GetInt32); rever precisão ao ligar ao backend real.
 ## Próxima tarefa autorizada
-Nenhuma até o dono do projeto aprovar a Fase 1 e autorizar a Fase 2.
+Corrigir erros do primeiro build/teste e avançar para a próxima fase em `NEXT-PHASE.md`.

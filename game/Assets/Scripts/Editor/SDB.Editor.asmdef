@@ -1,0 +1,1 @@
+{"name":"SDB.Editor","rootNamespace":"SDB.Editor","references":["SDB.Core","SDB.Player","SDB.UI","SDB.Demo","UnityEngine.UI"],"includePlatforms":["Editor"],"defineConstraints":[],"overrideReferences":false,"precompiledReferences":[],"autoReferenced":true,"versionDefines":[],"noEngineReferences":false}
